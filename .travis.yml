@@ -22,3 +22,11 @@ install:
 
 script:
   - npm test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: QwmMU+f2hPzR3FKz5HEW9lWHSW9XZY3tJDso7oYHQpIcxsV4Po/l/bt6Qg/lJI0JEPixZ761hOSmM0AOEErKG02vRKtVPl32v9k1CR4hw7Y0oqbgF+WTLkOydixueGkTW4J3mKWpseNfnV/aqnQuSMjwswK3qvyqBzbq2fl57HiJ2HCQa2U0889QPNilGVaxjd4bhK4j8uuaPcz523Ya/V2PgWpv9V2EdK7Zb4WJ39QckDOwiy19qbjDm8PMV1DcZX2/1rGjOIEueidEpeApsIyJe1486T6RwZ2DYPaTxF+2Qo4nZ6qg/CH/LFIZbpcA0cS30VLhNHssacPcqSEX7ipe9t6AzjQJWhiZ7grmK7kFJKj49dNAtm8zg+KjTcV5y3Zcow4s+IM25615WphHtg3dIDUuN5NolLGTbqIcFlv1VXTOSLrMq12GRDMthsp/zMx62fBEdW0c3iTiShGAoGlVDPAfmEOYi0mv4CSoFVC/pWZTk672RDSeK7NRvTJ8S218UGNhUX0UMkYLRqlLijBZSJoSs1d/enHwEQPA6pB/04gArXbw5HIDm/y5B17RhkXl3pNQ27SRpV8qymZpPGluo2+UryGrUxUo/JkE6x+XfOKsMYNXEWPAHUk4kH/Z0B4OtV7Sv5DZe2ybnmhr9cEVrAOtcqyYLsAPWeFlTUI=
+  app: guarded-lake-55900
+  on:
+    repo: kimroen/peepchat-ui
