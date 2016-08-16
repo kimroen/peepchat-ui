@@ -6,7 +6,10 @@ export default Ember.Route.extend({
   },
   actions: {
     doRegister() {
-      alert('registration attempted');
+      this.get('currentModel').save()
+        .then(() => {
+          this.transitionTo('auth.login');
+        });
     }
   }
 });
