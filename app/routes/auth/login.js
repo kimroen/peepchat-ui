@@ -26,6 +26,10 @@ export default Route.extend({
           flashMessages.success('Logged in!');
         })
         .catch((response) => {
+          if (typeof response === 'undefined') {
+            return flashMessages.danger('Are you sure you have an internet connection?');
+          }
+
           const { errors } = response;
 
           // If there's a 401-error in there
