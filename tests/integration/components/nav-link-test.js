@@ -15,7 +15,7 @@ test('it renders', function(assert) {
 
   // Template block usage:
   this.render(hbs`
-    {{#nav-link}}
+    {{#nav-link 'index'}}
       template block text
     {{/nav-link}}
   `);
